@@ -56,3 +56,6 @@ debugInConsole: false # Print debug info in Obsidian console
 - There are 65 questions
 - You get 130 minutes to complete the exam
 
+
+HAHAHHAHAHHAHHAHAH
+
