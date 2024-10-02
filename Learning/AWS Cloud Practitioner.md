@@ -1,3 +1,11 @@
+```table-of-contents
+title: 
+style: nestedList # TOC style (nestedList|nestedOrderedList|inlineFirstLevel)
+minLevel: 0 # Include headings from the specified level
+maxLevel: 2 # Include headings up to the specified level
+includeLinks: true # Make headings clickable
+debugInConsole: false # Print debug info in Obsidian console
+```
 # Getting your head in the Cloud
 ## What is the cloud?
 - Decentralized server architecture
@@ -160,4 +168,54 @@
 - Delivering pilot transformations and their value
 #### Scaling
 - Expand sustainable initiatives
+### Image Overview
 ![[Pasted image 20241002144646.png]]
+## Well-Architected Framework Overview
+### Six Pillars
+#### Security
+- Focuses on protection of data, systems, and any assets used by your workload
+- E.g. using CloudTrail to log all actions performed in your account
+#### Cost Optimization
+- Focuses on the ongoing process of maintaining costs in the cloud
+- Use S3 Intelligent-Tiering to automatically move data
+#### Performance Efficiency
+- Focuses on the ability to use computing resources efficiently to meet requirements
+- Use Lambda to run code with zero administration
+#### Operational Excellence
+- Focusing on creating applications that successfully support your workload
+- Use CodeCommit for code and template version control
+#### Reliability
+- Focuses on architecting a workload to be consistent and able to recover quickly
+- Use Multi-AZ deployments of RDS databases
+#### Sustainability
+- Focuses on environmental impacts like energy efficiency and consumption
+- Use EC2 Auto Scaling to ensure maximum utilization
+### General Design Principles
+- Stop guessing your capacity needs by collecting usage data
+- Test systems at production scale
+- Consider evolutionary architectures
+- Automate with architectural experimentation in mind
+- Drive architectures using data by leveraging usage information
+- Improve through game-days (drills)
+## Exam Tips
+- Understand the CAF perspectives and the Cloud Transformation Journey Phases
+- Understand the Well-Architected Framework pillars, design principles, and how they apply in the real world
+
+# AWS Management Console and accessing AWS
+## Root User
+- Initially created when you set up the account
+- Can delete the account and all resources inside the account
+- Should *NOT* be used for day to day tasks
+## CLI
+- Allows you to access resources through a terminal window
+- Sometimes new features are in CLI first
+- Allows programmatic access
+## Programmatic Access
+- Multiple ways to achieve programmatic access
+	- CLI
+	- Application code
+	- SDKs (access from programming languages)
+## Exam Tips
+- The root user should be protected by MFA, and is more powerful than *any* other user
+- CLI and SDKs are available options
+# Placeholder
