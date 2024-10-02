@@ -24,7 +24,7 @@
 - Learn the different service categories
 - Read the whitepaper linked above
 
-# Introducing Cloud Computing and Deployment Models
+# Cloud Computing and Deployment Models
 ## CapEx vs. OpEx
 - Capital Expenditures
 	- Upfront purchases towards fixed assets
@@ -114,5 +114,50 @@
 # Introducing the Frameworks
 ## Cloud Adoption Framework Overview
 ### Perspectives and Foundational Capabilities
-
-	h
+#### Security
+- Focuses on compliance and assurance
+- Governance, security assurance, and application security
+- Protection of infrastructure and data
+- Identity and access management
+- Incident response and threat detection
+#### Business
+- Focuses on strategy and outcomes
+- Strategy, product innovation
+- Data science, monetization
+#### Platform
+- Focuses on architecture and engineering
+- Continuous Integration/Continuous Delivery
+- Modern App Development
+- Provisioning and Orchestration
+#### Operations
+- Focuses on successful workload delivery
+- Manages event (AIOps), incident and problem, change and release, performance and capacity, configuration, patches, availability and continuity, and application
+-  Observability is high priority
+#### Governance
+- Focuses on transformational risks and maximizing organizational benefits
+- Manages program and project benefits, risk, financial, and portfolio
+- Governs data and curation
+#### People 
+- Focuses on people and business
+- Transformation of leadership and workforce
+- Organization of design and alignment
+- Cloud fluency, change acceleration, culture evolution
+### Cloud Transformation Domains
+#### Technology
+- Migrate and modernize legacy infrastructure
+#### Process
+- Digitize, automate, and optimize your business
+#### Organization
+- Reimagine orchestration
+#### Product
+- Reimagine business model by creating new products/services
+### Cloud Transformation Journey Phases
+#### Envision
+- Benefits to business outcomes
+#### Align
+- Gaps across perspectives
+#### Launch
+- Delivering pilot transformations and their value
+#### Scaling
+- Expand sustainable initiatives
+![[Pasted image 20241002144646.png]]
