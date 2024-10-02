@@ -1,12 +1,3 @@
-(disregard this, its a table of contents when viewed in Obsidian)
-```table-of-contents
-title: 
-style: nestedList # TOC style (nestedList|nestedOrderedList|inlineFirstLevel)
-minLevel: 0 # Include headings from the specified level
-maxLevel: 0 # Include headings up to the specified level
-includeLinks: true # Make headings clickable
-debugInConsole: false # Print debug info in Obsidian console
-```
 # Getting your head in the Cloud
 ## What is the cloud?
 - Decentralized server architecture
@@ -104,3 +95,24 @@ debugInConsole: false # Print debug info in Obsidian console
 - Region is global and is made up of two or more AZs
 - An AZ is made up of multiple data centers
 - Multi-AZ deployments provide high availability
+# Reviewing Edge Locations and Local Zones
+## Latency
+- In layman's terms: the amount of time a website takes to load
+- More accurately: the time that passes between a users request and the resulting response
+- Low latency > High latency
+## Local Zones
+- Place AWS services closer to end-users
+- Facilitates lower latency
+- Extensions of AWS Regions
+## Edge Locations
+- Aren't used to launch resources, but instead cache content for quicker viewing
+- Delivered by Cloudfront
+- More edge locations than AZs, due to use of the AWS backbone network
+## Exam Tips
+- An edge location ensures low latency by placing content closer to users
+- A local zone is an extension of a region which is closer to end-users
+# Introducing the Frameworks
+## Cloud Adoption Framework Overview
+### Perspectives and Foundational Capabilities
+
+	h
