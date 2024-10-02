@@ -6,6 +6,7 @@ maxLevel: 2 # Include headings up to the specified level
 includeLinks: true # Make headings clickable
 debugInConsole: false # Print debug info in Obsidian console
 ```
+(disregard this, it's a table of contents when viewed in Obsidian)
 # Getting your head in the Cloud
 ## What is the cloud?
 - Decentralized server architecture
@@ -218,4 +219,4 @@ debugInConsole: false # Print debug info in Obsidian console
 ## Exam Tips
 - The root user should be protected by MFA, and is more powerful than *any* other user
 - CLI and SDKs are available options
-# Placeholder
+# Compute: The Bigger Picture
