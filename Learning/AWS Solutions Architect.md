@@ -57,7 +57,3 @@ debugInConsole: false # Print debug info in Obsidian console
 - You get 130 minutes to complete the exam
 
 
-HAHAHHAHAHHAHHAHAH
-
-this is interesting
-
