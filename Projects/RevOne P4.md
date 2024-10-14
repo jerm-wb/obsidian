@@ -2,3 +2,16 @@
 Start codespace then spin up locally using
 
 	fdeploy
+
+
+# where is all the data located for the deduplication
+account number is in
+
+	galaxy.utxn_perfiniti_medicare
+
+data mapping is in
+
+	SELECT *
+	FROM galaxy.mst_dm_record_field_map
+	where record_code = 'Perfiniti SF OPP DUP'
+
