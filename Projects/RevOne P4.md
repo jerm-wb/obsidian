@@ -4,7 +4,7 @@ Start codespace then spin up locally using
 	fdeploy
 
 backend is spun up too!
-# where is all the data located for the deduplication
+#  is all the data located for the deduplication
 account number is in
 
 	galaxy.utxn_perfiniti_medicare
