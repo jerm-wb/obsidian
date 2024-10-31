@@ -1,9 +1,13 @@
 # How to spin up frontend
 Start codespace then spin up locally using
 
+	bcompile
+	bdeploy
 	fdeploy
 
-backend is spun up too!
+package.json has scripts to start up dev,stage,etc
+
+
 #  is all the data located for the deduplication
 account number is in
 
