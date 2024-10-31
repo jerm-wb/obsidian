@@ -7,7 +7,7 @@ Start codespace then spin up locally using
 
 package.json has scripts to start up dev,stage,etc
 
-
+have to go into ec2/ecr to deploy change after pull request
 #  is all the data located for the deduplication
 account number is in
 
