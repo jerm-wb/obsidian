@@ -401,3 +401,166 @@ Foundational service that manages virtual instances
 Scenario: Need to use Docker for container management?
 - Answer: Use ECS (Elastic Container Service)
 - Reason: ECS supports Docker, while EKS is for Kubernetes
+
+# Serverless Services in AWS
+
+## 🌐 What is Serverless?
+> [!info]
+> A cloud-native development model where:
+> - Developers build/run apps without managing servers
+> - Servers exist but are abstracted away
+> - Focus is purely on code and business logic
+
+## 🔄 AWS Serverless Services
+
+### Lambda
+> [!definition]
+> Serverless compute service for running code without server management
+
+**Key Features:**
+- Supports multiple languages (Python, Rust, Ruby, etc.)
+- Automatic scaling
+- Function-based architecture
+
+#### Use Cases for Lambda:
+1. **Real-time File Processing**
+   ```mermaid
+   graph LR
+   A[S3 Upload] --> B[Lambda] --> C[DynamoDB]
+   ```
+
+2. **Email Notifications**
+   ```mermaid
+   graph LR
+   A[CodeCommit Changes] --> B[CloudWatch] --> C[Lambda] --> D[SNS] --> E[Email]
+   ```
+
+3. **Backend Business Logic**
+   ```mermaid
+   graph LR
+   A[Alexa Skill] --> B[Lambda] --> C[DynamoDB] --> D[Lambda] --> E[Alexa Response]
+   ```
+
+### Fargate
+> [!definition]
+> Pay-as-you-go auto-scaling compute engine for containers
+
+**Key Features:**
+- Container-based
+- Define memory and compute resources
+- Isolated tasks (no shared resources)
+- Launch type in ECS
+
+#### Use Cases for Fargate:
+1. **Message-Driven Workloads**
+   - Long-polling SQS messages
+   - Processing > 15 minutes
+   - DynamoDB storage
+
+2. **Event-Driven & Scheduled Workloads**
+   Example: Code Scanning Flow
+   ```mermaid
+   graph LR
+   A[CodeCommit PR] --> B[Lambda] --> C[Fargate Task] --> D[SNS/Email]
+   ```
+
+## 🔑 Key Differences
+> [!important]
+> Lambda vs Fargate:
+> - Lambda: Short, redundant tasks (<15 mins)
+> - Fargate: Longer-running container tasks
+
+## 📝 Exam Tips
+> [!tip]
+> Remember:
+> 1. **Lambda Responsibilities**
+>    - You: Code only
+>    - AWS: Servers, environment, language support
+> 
+> 2. **Fargate**
+>    - Considered serverless
+>    - Used for container management
+>    - Part of ECS ecosystem
+
+## 💡 Selection Guide
+- Need quick functions? → Lambda
+- Need longer processes? → Fargate
+- Need container management? → Fargate
+- Need simple code execution? → Lambda
+
+# Serverless Services Pricing & Features
+
+## Lambda Features
+
+### 💻 Supported Languages
+- Java
+- Go  
+- PowerShell
+- Node.js
+- C#
+- Python
+- Ruby
+
+### ⚙️ Key Features
+> [!info]
+> - Flexible development environments
+> - Console coding support
+> - Event-driven execution
+> - 15-minute maximum timeout (default: 3 seconds)
+
+### 🔐 Responsibility Model
+- **You are responsible for:**
+  - Code
+  - Code security
+- **AWS manages:**
+  - Coding environment
+  - Language support/versions
+
+## 💰 Pricing Models
+
+### Lambda Pricing
+> [!tip]
+> **Pricing Components:**
+> - Number of requests
+> - Duration (rounded to nearest millisecond)
+> - Charges begin at function invocation
+> - Testing is included in charges
+> 
+> **Free Tier:**
+> - Part of Always Free tier
+> - 1 million free requests per month
+> - Continues after first year
+
+### Fargate Pricing
+> [!important]
+> **Cost Structure:**
+> - No upfront costs
+> - Pay-as-you-go model
+> - Based on:
+>   - vCPU usage
+>   - Memory usage
+>   - Storage usage
+> - No free tier available
+
+## 📝 Exam Tips
+> [!note]
+> Remember:
+> 1. **Lambda:**
+>    - Always Free tier includes 1M requests/month
+>    - Continues beyond first year
+> 
+> 2. **Fargate:**
+>    - No upfront costs
+>    - Pay for what you use (vCPU/memory/storage)
+>    - No free tier option
+
+## 💡 Quick Reference
+```mermaid
+graph TB
+    A[Serverless Pricing] --> B[Lambda]
+    A --> C[Fargate]
+    B --> D[Pay per request + duration]
+    B --> E[Free tier available]
+    C --> F[Pay for resources]
+    C --> G[No free tier]
+```
