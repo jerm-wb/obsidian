@@ -263,3 +263,141 @@ Foundational service that manages virtual instances
 ## Exam Tips
 - Know the pricing options
 - Understand the real world usage of EC2 (deploying database or web app)
+
+# EC2 Connection Methods & Demo
+
+## Connection Methods
+- **AWS Management Console**
+  - Browser-based configuration and management
+  
+- **EC2 Instance Connect (EIC)**
+  - Uses IAM policies to control SSH access
+  - Eliminates need for SSH key management
+  
+- **SSH/RDP Connection**
+  - SSH → Linux instances
+  - RDP → Windows instances
+  - Requires key pair (public + private keys)
+  - Connect from local machine using private key
+  
+- **Session Manager (Systems Manager)**
+  - Manage instances via browser or AWS CLI
+
+## Creating EC2 Instance
+
+### Instance Configuration
+1. Name: Web App
+2. AMI: Amazon Linux (free tier)
+3. Create new key pair: "NewKeyPair"
+   > ⚠️ Key pair can only be downloaded at creation time
+
+### Setup Steps
+1. Access EC2 dashboard
+2. Launch new instance
+3. Configure settings:
+   - Title: Web App
+   - AMI: Amazon Linux (free tier)
+   - Architecture: Default
+   - Instance Type: Free tier eligible
+   - Network: Allow SSH from anywhere (for demo)
+   - Storage: Default configuration
+
+### Connection Test
+1. Wait for instance status: Running
+2. Use Instance Connect
+3. Verify connection using list command
+
+## 📝 Exam Tips
+> [!important]
+> - Know all methods to connect to EC2 from local machine:
+>   - Management Console
+>   - Instance Connect
+>   - SSH/RDP
+>   - Systems Manager
+> 
+> - Remember Linux connection options:
+>   - Instance Connect
+>   - SSH
+>   - Systems Manager
+> 
+> - Windows instances use RDP only
+
+## 🔑 Key Points
+- Different connection methods serve different purposes
+- Security considerations important for production
+- Free tier options available for testing
+- Instance Connect simplifies SSH access 
+
+# Containers in AWS - Overview
+
+## 🎁 What are Containers?
+> [!analogy]
+> Think of containers like pizza boxes:
+> - Each box contains separate application/service
+> - Can be stacked on single server or distributed
+> - Creates organization, separation, and security
+
+## 📋 Container Benefits
+- **Increased Portability**
+  - Deploy across multiple OS and hardware platforms
+- **Operational Consistency**
+  - Same deployment behavior everywhere
+- **Greater Efficiency**
+  - Rapid deployment, patching, and scaling
+- **Development Acceleration**
+  - Faster dev, test, and production cycles
+- **Resource Efficiency**
+  - Less system resources than traditional VMs
+  - No OS images included
+
+## 🎯 When to Use Containers
+> [!tip]
+> Consider containers for:
+> - Lift and shift to cloud
+> - Application refactoring for cloud-native
+> - Microservices architecture
+> - CI/CD streamlining
+> - Repetitive tasks (ETL, batch jobs)
+
+## AWS Container Services
+
+### 📦 Elastic Container Registry (ECR)
+> [!analogy]
+> Like storing recipes for pizza
+>  Store, share, and deploy container software
+
+### 👨‍🍳 ECS vs EKS (The Head Chefs)
+**Common Features:**
+- Both are container orchestration services
+- Fully managed
+- Can run with:
+  - EC2
+  - Fargate
+  - Outposts
+  - Anywhere (hybrid solutions)
+
+#### Key Differences:
+
+| ECS                                   | EKS                               |
+| ------------------------------------- | --------------------------------- |
+| Built with Fargate                    | Uses Kubernetes (open-source)     |
+| Supports Docker & Docker Composed CLI | Supports Kubernetes               |
+| -                                     | Supports Local Zones & Wavelength |
+
+> [!note]
+> Choice between ECS and EKS often depends on team expertise with Docker vs Kubernetes
+
+## 💡 Exam Tips
+> [!important]
+> Remember:
+> - ECS vs EKS differences
+> - Real-world container use cases:
+>   - Lift and shift
+>   - Microservices
+>   - CI/CD deployments
+>   - Application refactoring
+
+## 📝 Quiz Note
+Scenario: Need to use Docker for container management?
+- Answer: Use ECS (Elastic Container Service)
+- Reason: ECS supports Docker, while EKS is for Kubernetes
