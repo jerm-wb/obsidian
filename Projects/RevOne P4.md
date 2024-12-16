@@ -1,3 +1,11 @@
+
+### when the frontend doesnt have vite
+`rm -rf node_modules`
+`nvm install 18`
+`npm i -g yarn`
+`yarn add vite`
+or else you will die inside dependency errors
+
 #### How to spin up frontend
 Start codespace then spin up locally using
 
