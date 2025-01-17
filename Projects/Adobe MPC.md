@@ -14,3 +14,9 @@ starts the backend
 starts the frontend
 
 *make sure to expose ports 8080 + 8081!!*
+
+
+
+## How to set up a new service that connects to the DB
+https://github.com/WreckingBallStudioLabs/proj-adobe-mpc-api/pull/145/files
+Reference this PR that Rene made
