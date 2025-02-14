@@ -1,12 +1,3 @@
-```table-of-contents
-title: 
-style: nestedList # TOC style (nestedList|nestedOrderedList|inlineFirstLevel)
-minLevel: 0 # Include headings from the specified level
-maxLevel: 2 # Include headings up to the specified level
-includeLinks: true # Make headings clickable
-debugInConsole: false # Print debug info in Obsidian console
-```
-(disregard this, it's a table of contents when viewed in Obsidian)
 # Getting your head in the Cloud
 ## What is the cloud?
 - Decentralized server architecture
@@ -564,3 +555,6 @@ graph TB
     C --> F[Pay for resources]
     C --> G[No free tier]
 ```
+
+
+
