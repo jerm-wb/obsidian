@@ -1,4 +1,4 @@
-<%tp.file.move("/wb/Learning/AWS Cloud Practitioner/" + "Course Notes - " + tp.date.now("YYYY-MM-DD"))%> 
+
 # [AWS Service Name]
 
 ## 📋 Overview
