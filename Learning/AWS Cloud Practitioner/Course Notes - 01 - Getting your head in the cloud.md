@@ -1,4 +1,4 @@
-#CloudOverview
+#Overview 
 # What is the cloud?
 - Decentralized server architecture
 - Data center divided into slices using virtualization

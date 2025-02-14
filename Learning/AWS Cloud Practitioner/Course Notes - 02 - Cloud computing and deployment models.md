@@ -1,4 +1,4 @@
-#Deployment #CloudOverview
+#Deployment #Overview
 # CapEx vs. OpEx
 - Capital expenditures
 	- Upfront purchases towards fixed assets
@@ -45,7 +45,7 @@
 ## Hybrid Cloud
 - Sensitive data is on premises, securely connected to Public Cloud
 - Good tradeoff of Public and Private clouds
-## 💡 Exam Tips
+# 💡 Exam Tips
 > [!important]
 > Remember:
 > - Understand the advantages of the cloud
