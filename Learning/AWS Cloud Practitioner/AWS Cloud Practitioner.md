@@ -11,6 +11,8 @@
 - [[Course Notes - 09 - Containers]]
 - [[Course Notes - 10 - Serverless services in AWS]]
 - [[Course Notes - 11 - Serverless services pricing & features]]
+- [[Course Notes - 12 - Introducing additional compute services]]
+- [[Course Notes - 13 - Exam Tips - Compute technology and service]]
 
 %% End Waypoint %%
 

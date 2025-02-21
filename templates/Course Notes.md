@@ -1,5 +1,5 @@
 <%tp.file.move("/wb/Learning/AWS Cloud Practitioner/" + "Course Notes - " + tp.date.now("YYYY-MM-DD"))%> 
-## 💡 Exam Tips
+# 💡 Exam Tips
 > [!important]
 > Remember:
 > - Key point 1
@@ -7,18 +7,18 @@
 > - Key point 3
 > - Key point 4
 
-## 📝 Quiz Notes
+# 📝 Quiz Notes
 Scenario: [Common exam scenario]
 - Answer: [Correct choice]
 - Reason: [Explanation]
 
-## 🔄 Related Services
+# 🔄 Related Services
 > [!note]
 > - Service 1: Connection/relationship
 > - Service 2: Connection/relationship
 > - Service 3: Connection/relationship
 
-## 💰 Pricing Considerations
+# 💰 Pricing Considerations
 > [!tip]
 > - Cost factor 1
 > - Cost factor 2
