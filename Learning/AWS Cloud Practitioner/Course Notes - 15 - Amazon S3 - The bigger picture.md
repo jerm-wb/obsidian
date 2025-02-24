@@ -1,4 +1,14 @@
-#  
+#  What is S3?
+- Storage
+	- You use S3 to store all your raw data safely until you need it
+- Globally Accessible
+# S3 Components
+- Objects
+	- The actual data
+- Buckets
+	- The unique container
+# Benefits of S3
+# Use Cases
 # 💡 Exam Tips
 > [!important]
 > Remember:
@@ -11,18 +21,6 @@
 Scenario: [Common exam scenario]
 - Answer: [Correct choice]
 - Reason: [Explanation]
-
-# 🔄 Related Services
-> [!note]
-> - Service 1: Connection/relationship
-> - Service 2: Connection/relationship
-> - Service 3: Connection/relationship
-
-# 💰 Pricing Considerations
-> [!tip]
-> - Cost factor 1
-> - Cost factor 2
-> - Cost factor 3
 
 ---
 *Notes Last Updated: [Date]*
