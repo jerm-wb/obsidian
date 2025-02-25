@@ -8,19 +8,26 @@
 - Buckets
 	- The unique container
 # Benefits of S3
-# Use Cases
+- Known for its durability
+	- Provides 11 9s of durability (99.99999999999%)
+- Scalability
+	- Virtually unlimited
+- Security
+	- Bucket policies
+		- Controls access to buckets using permissions
+	- Access control lists
+		- Controls access to buckets and objects
+- Versatility
+	- Store images, videos, backups, and big data
+	- Easy and efficient static web hosting
+	- Content distribution
+	- Data lakes
 # 💡 Exam Tips
 > [!important]
 > Remember:
-> - Key point 1
-> - Key point 2
-> - Key point 3
-> - Key point 4
-
-# 📝 Quiz Notes
-Scenario: [Common exam scenario]
-- Answer: [Correct choice]
-- Reason: [Explanation]
+> - S3 is object storage
+> - Provides durability, scalability, security, versatility
+> - Each object stored in S3 has data, a key (unique within a bucket), and metadata
 
 ---
-*Notes Last Updated: [Date]*
+*Notes Last Updated: 2025-02-25 11:20*

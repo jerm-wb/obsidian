@@ -15,6 +15,7 @@
 - [[Course Notes - 13 - Exam Tips - Compute technology and service]]
 - [[Course Notes - 14 - Exploring EC2 storage]]
 - [[Course Notes - 15 - Amazon S3 - The bigger picture]]
+- [[Course Notes - 16 - Exploring S3 storage classes]]
 
 %% End Waypoint %%
 
