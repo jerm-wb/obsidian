@@ -16,6 +16,7 @@
 - [[Course Notes - 14 - Exploring EC2 storage]]
 - [[Course Notes - 15 - Amazon S3 - The bigger picture]]
 - [[Course Notes - 16 - Exploring S3 storage classes]]
+- [[Course Notes - 17 - Introducing additional storage services]]
 
 %% End Waypoint %%
 
